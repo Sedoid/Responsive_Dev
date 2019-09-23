@@ -1,0 +1,102 @@
+
+header>section {
+    padding: 0px;
+    background-color: black
+   
+}
+
+header>:last-child{
+    background-color: orange;
+}
+
+header div:first-child section div:first-child
+{
+    margin: 0;
+   border-top: 4px solid orange;
+    color: white;
+    text-align: left;
+    padding: 0px;
+    /* background-color: red; */
+}
+
+header div:first-child  section div:last-child{
+   padding-right:0px;
+   /* background-color: green; */
+}
+header div:first-child > section div:last-child nav{
+    float: right;
+}
+header div:first-child > section div nav a{
+    margin: 0px;
+    margin-right: 8px;
+    padding: 1px;
+    text-decoration: none;
+    color:white;
+}
+
+header a:hover{
+    color: #33bdb8;
+}
+
+header div:last-child > section  nav a:last-child{
+    margin: 0px;
+}
+
+header div:last-child > section{
+    text-align: center;
+    padding-top: .5em;
+    /* background-color: yellow; */
+}
+
+header div:last-child  section  button{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    margin:0;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+footer .row{
+    background-color: red;
+    margin:0;
+}
+
+footer nav{
+    background-color: green;
+   float: right;
+}
+
+footer nav a{
+    color: white;
+    margin-right: 8px;
+}
+
+footer nav a:last-child{
+    margin: 0px;
+}
+
+
+
+
+.navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-collapse.collapse.in{
+    display:block !important;
+  }
