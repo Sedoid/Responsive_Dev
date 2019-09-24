@@ -1,15 +1,26 @@
 
 header>section {
     padding: 0px;
-    background-color: black
+    background-color:#194673
    
 }
-
-header>:last-child{
-    background-color: orange;
+.name{
+    display: table-cell;
+    vertical-align: middle;
 }
 
-header div:first-child section div:first-child
+    #spacer{
+        padding: 0px;
+        width: 0px;
+
+    }
+
+header>:last-child{
+    background-image: linear-gradient(to right, teal 40%, #f5f1d7);
+    color: white;
+}
+
+header div:first-child section  div.name
 {
     margin: 0;
    border-top: 4px solid orange;
@@ -23,20 +34,6 @@ header div:first-child  section div:last-child{
    padding-right:0px;
    /* background-color: green; */
 }
-header div:first-child > section div:last-child nav{
-    float: right;
-}
-header div:first-child > section div nav a{
-    margin: 0px;
-    margin-right: 8px;
-    padding: 1px;
-    text-decoration: none;
-    color:white;
-}
-
-header a:hover{
-    color: #33bdb8;
-}
 
 header div:last-child > section  nav a:last-child{
     margin: 0px;
@@ -48,6 +45,22 @@ header div:last-child > section{
     /* background-color: yellow; */
 }
 
+ ul li{
+     padding: 10px;
+ }
+
+ ul li:last-child a{
+     margin-right:0;
+     padding-right: 0;
+ }
+
+ ul li a:hover{
+  
+    color: yellow;
+   
+    text-decoration: underline;
+}
+
 header div:last-child  section  button{
     padding: 10px;
     border-radius: 5px;
@@ -57,16 +70,20 @@ footer{
     width: 100%;
     margin:0;
     box-sizing: border-box;
-    background-color: #ccc;
+    background-image: linear-gradient(to right, teal 40%, #f5f1d7);
+}
+
+footer p{
+    color:#eee;
 }
 
 footer .row{
-    background-color: red;
+   padding: 0px;
     margin:0;
 }
 
 footer nav{
-    background-color: green;
+   
    float: right;
 }
 
@@ -78,25 +95,67 @@ footer nav a{
 footer nav a:last-child{
     margin: 0px;
 }
+@media screen and (min-width: 900px){
+    .name h1{
+           
+    }
+}
+@media screen and (max-width: 800px){
+    body{
+        background-color: red;
+    }
+   
+
+    .name h1{
+        margin-top:10px;
+          font-size: 2em;
+        margin-right:2em;
+    }
+
+   
+    
+    
+}
 
 
+@media screen and (max-width: 700px){
+    body{
+        background-color: pink;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+        body{
+            background-color: green
+        }
+ .date{
+        text-align: left;
+        width:100%;
+        text-align: left;
+    }
+    
+
+    ul li:hover{
+        background-color: #164069;
+        border-bottom: 1px solid rgba(0,0,0.0.3);
+    }
+       
+        
+}
 
 
-.navbar-header {
-    float: none;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-  .navbar-collapse.collapse {
-    display: none!important;
-  }
-  .navbar-nav {
-    float: none!important;
-  }
-  .navbar-nav>li {
-    float: none;
-  }
-  .navbar-collapse.collapse.in{
-    display:block !important;
-  }
+@media screen and (max-width: 500px){
+    body{
+        background-color: orange;
+    }
+    .name h1{
+        padding-left: 10px;
+    }
+   
+}
+
+.top{
+    padding: 0px;
+}
+
