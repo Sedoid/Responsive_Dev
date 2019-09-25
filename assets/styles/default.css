@@ -4,16 +4,9 @@ header>section {
     background-color:#194673
    
 }
-.name{
-    display: table-cell;
-    vertical-align: middle;
-}
-
-    #spacer{
-        padding: 0px;
-        width: 0px;
-
-    }
+   .active{
+       color:teal !important;
+   }
 
 header>:last-child{
     background-image: linear-gradient(to right, teal 40%, #f5f1d7);
@@ -45,6 +38,12 @@ header div:last-child > section{
     /* background-color: yellow; */
 }
 
+.date p{
+    color: orange;
+    font-size: 1em; 
+    text-align: right;
+}
+
  ul li{
      padding: 10px;
  }
@@ -56,7 +55,7 @@ header div:last-child > section{
 
  ul li a:hover{
   
-    color: yellow;
+    color: teal!important;
    
     text-decoration: underline;
 }
@@ -67,7 +66,6 @@ header div:last-child  section  button{
 }
 
 footer{
-    width: 100%;
     margin:0;
     box-sizing: border-box;
     background-image: linear-gradient(to right, teal 40%, #f5f1d7);
@@ -83,11 +81,11 @@ footer .row{
 }
 
 footer nav{
-   
-   float: right;
+   text-align: right;
 }
 
 footer nav a{
+    
     color: white;
     margin-right: 8px;
 }
@@ -95,14 +93,34 @@ footer nav a{
 footer nav a:last-child{
     margin: 0px;
 }
+
+
 @media screen and (min-width: 900px){
+
+    body{
+        /* background-color: green; */
+    }
     .name h1{
            
+    }
+
+    .date p{
+    
+        padding-top: 10px; 
+        padding-right: 3vw;
+    }
+
+    .topNav ul li a{
+        position: relative;
+        right: 10px;
+        
+        padding: 5px;
+        
     }
 }
 @media screen and (max-width: 800px){
     body{
-        background-color: red;
+        /* background-color: red; */
     }
    
 
@@ -110,52 +128,131 @@ footer nav a:last-child{
         margin-top:10px;
           font-size: 2em;
         margin-right:2em;
+    } 
+
+    .date p{
+        padding-top: 10px; 
+        padding-right: 3.5vw;
     }
 
-   
-    
-    
+    .topNav ul li a{
+        position: relative;
+        right: 10px;
+        
+        padding: 5px;
+        
+    }
+
+    .name{
+        border-top:10px solid orange;
+    }
 }
+
+
+
+
 
 
 @media screen and (max-width: 700px){
     body{
-        background-color: pink;
+        /* background-color: pink; */
     }
 
 }
 
 @media screen and (max-width: 600px){
         body{
-            background-color: green
-        }
- .date{
-        text-align: left;
-        width:100%;
-        text-align: left;
-    }
-    
-
-    ul li:hover{
-        background-color: #164069;
-        border-bottom: 1px solid rgba(0,0,0.0.3);
-    }
-       
-        
+            /* background-color: green */
+        }     
 }
 
 
 @media screen and (max-width: 500px){
     body{
-        background-color: orange;
+        /* background-color: orange; */
+        width: 100vw;
     }
+
+    .name {
+        padding: 0px;
+       
+    }
+
     .name h1{
-        padding-left: 10px;
+        
+        margin:0px;
+      margin-left: 6vw;
+        padding-left:7vw;
+        margin:0;
+        padding-top:16px;
+      display: inline-block;
+      border-top: 4px solid orange;
+    }
+
+    header div:first-child section  div.name{
+        border-top: black;
+    }
+
+    .date p{
+        position: relative;
+        top: 18vw;
+        width:50vw;
+        margin-left: 3vw; 
+      
+    }
+
+    .topNav{
+      
+         width: 95%;
+         margin-bottom: 3px;
     }
    
+    .topNav ul{
+        margin-top: 2vh;
+        background-color: #1d4770;
+        width:100%;
+     
+    }
+
+    .topNav ul li:hover{
+      color: teal;
+    }
+
+    .topNav ul li:hover{
+       
+        background-color: teal;
+        opacity: 0.5;
+        border-bottom: 2px solid white;
+    }
+
+    .col-12{   
+        position: relative;
+        top: -2vh;
+        box-sizing: border-box;
+    }
+
+    footer .container .row div nav a{
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+    }   
 }
 
 .top{
     padding: 0px;
 }
 
+
+.topNav{
+        text-align: right;
+  
+       
+         padding: 0;
+      
+        
+        box-sizing: border-box;
+}
+
+.row{
+    width: 100%;
+}
