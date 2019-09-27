@@ -5,7 +5,7 @@ header>section {
    
 }
    .active{
-       color:teal !important;
+       color:white !important;
    }
 
 header>:last-child{
