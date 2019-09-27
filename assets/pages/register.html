@@ -8,12 +8,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="../styles/default.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
     <script src="../bootstrap/js/bootstrap.bundle.min.js" > </script>
     
 </head>
 <body>
 
-     <header >
+ <header >
 
          <section >
               <div class="container top">
@@ -82,16 +83,69 @@
             </div>
          </section>
               
-    </header>
-<section class="container">
-    <div class="row" style="padding: 20px;">
+</header>
+
+
+<section class="container object">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-12"">
+                <div id="purchase_text" style="color: rgba(0, 0, 0, 0.5);">
+                        <h2 style="color:rgba(0, 0, 0, 0.6)"> Purchase a Conference Pass</h2>
+                        <i> <span>500XFA PER PASS</span> </i>
+                        <br />
+                        <br />
+                        Purchase your Styles conference pass using the form to the right. Multiple passes may be purchased within the same order,
+                        so feel free to bring a friend or two aling. Once your order is finished we'll follow up and provide a receipt for the purchase.
+                        See you soon!
+                        <br />
+                        <br />
+                        <dt>Why Attend</dt>
+                        
+                            <ul list-style-type="d" >
+                                <li>Over 05 workd-class speakers</li>
+                                <li>One full day of workshops and presentations</li>
+                                <li>Hosted at Seven Academy, a historical Doulala CM</li>
+                                <li>November in Douala is simply amazing</li>
+                            </ul>
+                        
+                    </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-12 register" >
+                <div id="register_form">
+                        <form>
+                            <label> Name</label>
+                            <br />         
+                            <input type="text" required placeholder="Full Name" />
+                            <br />
+                            <label> Email</label><br />         
+                            <input type="email" required placeholder="Enter your Email Address" />
+                            <br />
+                            <label>Number of Seats</label>
+                            <br />
+                            <select class="choose">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+            
+                            <br />
+                            <label>Comment</label>
+                            <textarea placeholder="Place your Comments here" > </textarea>
+                                
+                          <input type="submit" value="PURCHASE" id="btn">
+                        </form>
+                    </div>
+        </div>
 
     </div>
 </section>
     
      
 
-    <footer >
+ <footer >
         <div class="container">
             <div class="row">
     
@@ -111,7 +165,7 @@
         </div>
             
                           
-    </footer>
+</footer>
 
 
 

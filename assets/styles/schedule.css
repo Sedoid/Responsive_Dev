@@ -1,0 +1,61 @@
+.object{
+    padding: 2em 0px;
+    
+   
+}
+
+.object .row{
+    padding: 0;
+    margin: 0;
+ 
+    padding: 0px
+}
+ 
+ 
+ table{
+     width: 100%;
+     margin: 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-collapse: collapse; 
+   
+    
+}
+
+
+
+/* table tr:first-child{
+  
+     background-color: #ccc;
+     font-weight: bold;
+     text-align: center;
+} */
+th, td {
+    text-align: left;
+   
+}
+
+th {
+    background-color: #ccc;
+    padding: 6px;
+}
+
+
+tr{
+    padding: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+tr td:first-child{
+    font-weight: bold;
+}
+
+td{
+   
+    margin-left: 4px;
+    text-align: left;
+} 
+
+/* table:last-child {
+    border: 1px solid red;
+} */

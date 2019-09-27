@@ -1,0 +1,141 @@
+
+
+.object{
+   padding:1em 0;
+}
+
+.spacer{
+    display: none;
+}
+article{
+  padding: 20px;
+  margin-bottom: 1em;
+  
+}
+
+.card{
+    box-shadow: 1px 1px 6px #ccc;
+}
+
+.row{
+    margin:0;
+    padding: 0;
+}
+
+article .card .card-body img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.card-body p{
+    color: rgba(0,0,0,0.7);
+    text-align: left;
+
+}
+
+.card-body a{
+    color:teal;
+}
+
+.card-body a:hover{
+    text-decoration: none;
+}
+
+.card-body h5{
+    color: rgba(0,0,0,0.6);
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media screen and (max-width: 991px){
+    body{
+        /* background-color: lightseagreen; */
+    }
+    
+    .object .row{
+        padding: 0px;
+    }
+
+    .spacer{
+        display: inline;
+        background-color: red;
+        visibility: hidden;
+    }
+
+    article{
+         margin: 0 0.1em !important;  
+        display: inline-block;    
+    }
+
+    
+  
+}
+
+
+@media screen and(min-width: 900px){
+    footer{
+        position: absolute;
+        bottom: 0px;
+    }
+    body{
+        background-color: red;
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+    body{
+        /* background-color: burlywood */
+    }
+
+}
+
+@media screen and (max-width: 600px){
+        body{
+            /* background-color: green */
+        }  
+        .spacer{
+            display: inline;
+            background-color: red;
+            visibility: hidden;
+        }
+
+        .card-body{
+            padding: 15px;
+        }
+    
+        article{
+             margin: 0 0.1em !important;       
+            display: inline-block; 
+        }   
+}
+
+
+@media screen and (max-width: 500px){
+    body{
+        /* background-color: orange; */
+        width: 100vw;
+    }
+    .card-body{
+        padding: 15px;
+    }
+
+    .spacer{
+        display: inline;
+        background-color: red;
+        visibility: hidden;
+    }
+
+    article{
+         margin: 0 0.1em !important;
+       
+      
+        display: inline-block;
+      
+    }
+}
+
+

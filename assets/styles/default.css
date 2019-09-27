@@ -66,6 +66,7 @@ header div:last-child  section  button{
 }
 
 footer{
+    padding-bottom: 3em;
     margin:0;
     box-sizing: border-box;
     background-image: linear-gradient(to right, teal 40%, #f5f1d7);
@@ -94,15 +95,15 @@ footer nav a:last-child{
     margin: 0px;
 }
 
+@media screen and(min-width:992px){
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
 
 @media screen and (min-width: 900px){
 
-    body{
-        /* background-color: green; */
-    }
-    .name h1{
-           
-    }
 
     .date p{
     
@@ -151,6 +152,19 @@ footer nav a:last-child{
 
 
 
+@media screen and (max-width: 991px){
+    body{
+        /* background-color: lightseagreen; */
+    }
+
+   
+
+    .topNav ul li{
+        padding: 10px 5px;
+    }
+
+   
+}
 
 
 @media screen and (max-width: 700px){
@@ -163,7 +177,16 @@ footer nav a:last-child{
 @media screen and (max-width: 600px){
         body{
             /* background-color: green */
-        }     
+        } 
+        .name{
+            width: 50%;
+        }
+        
+        .name h1{
+           
+            padding-left: 1em;
+
+        }
 }
 
 
@@ -231,10 +254,13 @@ footer nav a:last-child{
         box-sizing: border-box;
     }
 
+
+
     footer .container .row div nav a{
         display: inline-block;
         width: 100px;
         text-align: right;
+       
     }   
 }
 
