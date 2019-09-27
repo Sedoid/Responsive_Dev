@@ -5,7 +5,7 @@ header>section {
    
 }
    .active{
-       color:white !important;
+       color:teal !important;
    }
 
 header>:last-child{
@@ -55,7 +55,7 @@ header div:last-child > section{
 
  ul li a:hover{
   
-    color: teal!important;
+    color: white!important;
    
     text-decoration: underline;
 }
@@ -103,6 +103,7 @@ footer nav a:last-child{
 }
 
 @media screen and (min-width: 900px){
+
 
 
     .date p{
@@ -237,10 +238,7 @@ footer nav a:last-child{
      
     }
 
-    .topNav ul li:hover{
-      color: teal;
-    }
-
+    
     .topNav ul li:hover{
        
         background-color: teal;
