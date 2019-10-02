@@ -40,6 +40,6 @@ var seconds = Math.floor((t%(1000*60)) / 1000);
     }
 
     top.appendChild(start);
-}, 1000);
+}, 1);
 
 }
