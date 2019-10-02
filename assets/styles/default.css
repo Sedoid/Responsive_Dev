@@ -17,6 +17,7 @@ header div:first-child section  div.name
 {
     margin: 0;
    border-top: 4px solid orange;
+  
     color: white;
     text-align: left;
     padding: 0px;
@@ -95,6 +96,7 @@ footer nav a:last-child{
     margin: 0px;
 }
 
+
 @media screen and(min-width:992px){
     footer{
         position: absolute;
@@ -119,7 +121,20 @@ footer nav a:last-child{
         padding: 5px;
         
     }
+
+    .name{
+        border-bottom: 4px solid orange;
+    }
+
+    .date p{
+        margin-top: 5%;   
+    }
+    .topNav{
+        margin-top:6.5%;
+    }
+
 }
+
 @media screen and (max-width: 800px){
     body{
         /* background-color: red; */
@@ -131,6 +146,9 @@ footer nav a:last-child{
           font-size: 2em;
         margin-right:2em;
     } 
+    #root{
+        padding-left:10px;
+    }
 
     .date p{
         padding-top: 10px; 
@@ -148,6 +166,18 @@ footer nav a:last-child{
     .name{
         border-top:10px solid orange;
     }
+}
+
+
+h1 .counter{
+  
+    display: inline-block;
+    padding:5px 5px;
+    border: 2px solid rgb(155, 112, 32);
+    border-radius: 5px;
+    background-color:rgba(248, 163, 4, 0.6);
+    margin-bottom: 5px;
+    font-size: 0.3
 }
 
 
@@ -198,19 +228,24 @@ footer nav a:last-child{
     }
 
     .name {
-        padding: 0px;
-       
+        padding: 0px; 
+       border: 0;
     }
+       
+ 
 
     .name h1{
-        
         margin:0px;
-      margin-left: 6vw;
+        margin-left: 6vw;
         padding-left:7vw;
         margin:0;
         padding-top:16px;
       display: inline-block;
       border-top: 4px solid orange;
+      border-bottom: 4px solid orange;
+    }
+    .counter{
+        font-size: 0.3em;
     }
 
     header div:first-child section  div.name{
@@ -245,6 +280,8 @@ footer nav a:last-child{
         opacity: 0.5;
         border-bottom: 2px solid white;
     }
+
+   
 
     .col-12{   
         position: relative;
